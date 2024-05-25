@@ -1,4 +1,4 @@
-// object表示一个js对象, 一般中开发中不使用
+// object表示一个js对象, 一般中开发中不使用。一切都是对象
 let a: object;
 a = {};
 a = function (){};

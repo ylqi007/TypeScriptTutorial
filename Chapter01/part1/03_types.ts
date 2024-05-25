@@ -1,5 +1,5 @@
-// 也可以使用字面量进行类型声明
-let a: 10;
+// 可以使用字面量进行类型声明
+let a: 10;  // 有点像常量值，后续就不能再次赋值了
 a = 10;
 // a = 11; // Assigned expression type 11 is not assignable to type 10
 
@@ -17,12 +17,16 @@ c = "hello";
 // any: 表示任意类型。一个变量设置为类型any，相当于该变量关闭了TS的类型检测
 // 使用TS时，不建议使用any类型
 // 声明变量如果不指定类型，则TS解析器会自动判断变量的类型为any(隐式的any)
-let d: any; // 显式的any， let: d; 隐式的写法
+let d: any; // 显式的any，
+// let d; // 隐式的写法
 d = 10;
 d = true;
 d = "hello";
 
 
+/**
+ * unknown 表示未知类型
+ */
 // unknown 表示未知类型
 let e: unknown;
 e = 10;
